@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Platform - Mi Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="../index.html" class="nav-logo">Mi Portfolio</a>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="../index.html#home" class="nav-link">Inicio</a>
+                    <a href="../index.html#about" class="nav-link">Sobre Mí</a>
+                    <a href="../index.html#projects" class="nav-link">Proyectos</a>
+                    <a href="../cv.html" class="nav-link">CV</a>
+                    <a href="../contact.html" class="nav-link">Contacto</a>
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="es">
+                            <i class="fas fa-globe"></i> ES
+                        </button>
+                        <button class="lang-btn" data-lang="en">
+                            <i class="fas fa-globe"></i> EN
+                        </button>
+                    </div>
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <section class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb-nav">
+                    <a href="../index.html">Inicio</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <a href="../index.html#projects">Proyectos</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span>E-commerce Platform</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Hero del Proyecto -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content">
+                    <h1 class="project-title">E-commerce Platform</h1>
+                    <p class="project-subtitle">
+                        Plataforma de comercio electrónico completa con carrito de compras, 
+                        sistema de pagos y panel de administración.
+                    </p>
+                    <div class="project-meta">
+                        <div class="project-meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Enero 2025</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <i class="fas fa-tag"></i>
+                            <span>Desarrollo Web</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 meses</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Demo
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fab fa-github"></i>
+                            Ver Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imagen Principal -->
+        <section class="project-showcase">
+            <div class="container">
+                <div class="project-image-main">
+                    <img src="../assets/images/project1-main.jpg" alt="E-commerce Platform - Vista principal" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido del Proyecto -->
+        <section class="project-content">
+            <div class="container">
+                <div class="project-layout">
+                    <!-- Contenido Principal -->
+                    <div class="project-main">
+                        <!-- Descripción -->
+                        <div class="content-section">
+                            <h2>Descripción del Proyecto</h2>
+                            <p>
+                                Esta plataforma de e-commerce fue desarrollada para una empresa retail que necesitaba 
+                                expandir su presencia online. El proyecto incluyó desde el diseño de la experiencia 
+                                de usuario hasta la implementación de un sistema robusto de gestión de inventario.
+                            </p>
+                            <p>
+                                La plataforma permite a los usuarios navegar por productos, agregarlos al carrito, 
+                                realizar pagos seguros y hacer seguimiento de sus pedidos. Los administradores 
+                                pueden gestionar productos, pedidos, usuarios y generar reportes detallados.
+                            </p>
+                        </div>
+
+                        <!-- Características -->
+                        <div class="content-section">
+                            <h2>Características Principales</h2>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3>Carrito de Compras</h3>
+                                        <p>Sistema de carrito persistente con cálculo automático de impuestos y envío.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3>Pagos Seguros</h3>
+                                        <p>Integración con Stripe para procesamiento seguro de pagos con tarjeta.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-user-shield"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3>Autenticación</h3>
+                                        <p>Sistema completo de registro, login y gestión de perfiles de usuario.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3>Panel Admin</h3>
+                                        <p>Dashboard completo para gestión de productos, pedidos y analíticas.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3>Búsqueda Avanzada</h3>
+                                        <p>Filtros por categoría, precio, marca y búsqueda de texto completo.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3>Diseño Responsivo</h3>
+                                        <p>Optimizado para dispositivos móviles, tablets y escritorio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Galería de Imágenes -->
+                        <div class="content-section">
+                            <h2>Capturas de Pantalla</h2>
+                            <div class="project-gallery">
+                                <div class="gallery-item">
+                                    <img src="../assets/images/project1-home.jpg" alt="Página de inicio" loading="lazy">
+                                    <p>Página de inicio con productos destacados</p>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../assets/images/project1-product.jpg" alt="Página de producto" loading="lazy">
+                                    <p>Vista detallada del producto</p>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../assets/images/project1-cart.jpg" alt="Carrito de compras" loading="lazy">
+                                    <p>Carrito de compras y checkout</p>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../assets/images/project1-admin.jpg" alt="Panel de administración" loading="lazy">
+                                    <p>Panel de administración</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desafíos y Soluciones -->
+                        <div class="content-section">
+                            <h2>Desafíos y Soluciones</h2>
+                            <div class="challenges-list">
+                                <div class="challenge-item">
+                                    <h3>🚀 Optimización de Performance</h3>
+                                    <p>
+                                        <strong>Desafío:</strong> La aplicación necesitaba cargar rápidamente con un gran catálogo de productos.
+                                    </p>
+                                    <p>
+                                        <strong>Solución:</strong> Implementé lazy loading, paginación eficiente y cachéado Redis para mejorar 
+                                        los tiempos de carga en un 60%.
+                                    </p>
+                                </div>
+                                <div class="challenge-item">
+                                    <h3>🔒 Seguridad de Pagos</h3>
+                                    <p>
+                                        <strong>Desafío:</strong> Garantizar la seguridad en las transacciones de pago.
+                                    </p>
+                                    <p>
+                                        <strong>Solución:</strong> Integré Stripe con webhooks seguros y implementé validación 
+                                        tanto en frontend como backend.
+                                    </p>
+                                </div>
+                                <div class="challenge-item">
+                                    <h3>📱 Experiencia Móvil</h3>
+                                    <p>
+                                        <strong>Desafío:</strong> Crear una experiencia de compra fluida en dispositivos móviles.
+                                    </p>
+                                    <p>
+                                        <strong>Solución:</strong> Diseñé interfaces touch-friendly y optimicé el flujo de checkout 
+                                        para móviles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="project-sidebar">
+                        <!-- Tecnologías -->
+                        <div class="sidebar-section">
+                            <h3>Tecnologías Utilizadas</h3>
+                            <div class="tech-stack">
+                                <div class="tech-category">
+                                    <h4>Frontend</h4>
+                                    <div class="tech-items">
+                                        <span class="tech-badge">JavaScript</span>
+                                        <span class="tech-badge">HTML5</span>
+                                        <span class="tech-badge">CSS3</span>
+                                        <span class="tech-badge">Responsive Design</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h4>Backend</h4>
+                                    <div class="tech-items">
+                                        <span class="tech-badge">Python</span>
+                                        <span class="tech-badge">JavaScript</span>
+                                        <span class="tech-badge">JSON APIs</span>
+                                        <span class="tech-badge">Data Processing</span>
+                                    </div>
+                                </div>
+                                <div class="tech-category">
+                                    <h4>Herramientas</h4>
+                                    <div class="tech-items">
+                                        <span class="tech-badge">Git</span>
+                                        <span class="tech-badge">VS Code</span>
+                                        <span class="tech-badge">Chrome DevTools</span>
+                                        <span class="tech-badge">Terminal</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Estadísticas -->
+                        <div class="sidebar-section">
+                            <h3>Estadísticas del Proyecto</h3>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">15,000+</span>
+                                    <span class="stat-label">Líneas de código</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">50+</span>
+                                    <span class="stat-label">Componentes React</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">95%</span>
+                                    <span class="stat-label">Cobertura de tests</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">98</span>
+                                    <span class="stat-label">Lighthouse Score</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enlaces del Proyecto -->
+                        <div class="sidebar-section">
+                            <h3>Enlaces</h3>
+                            <div class="project-links-sidebar">
+                                <a href="#" class="project-link-item">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Ver Demo en Vivo</span>
+                                </a>
+                                <a href="#" class="project-link-item">
+                                    <i class="fab fa-github"></i>
+                                    <span>Código en GitHub</span>
+                                </a>
+                                <a href="#" class="project-link-item">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>Documentación</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Relacionados -->
+        <section class="related-projects">
+            <div class="container">
+                <h2 class="section-title">Otros Proyectos</h2>
+                <div class="related-projects-grid">
+                    <div class="related-project-card">
+                        <div class="related-project-image">
+                            <img src="../assets/images/project2-preview.jpg" alt="Task Management App" loading="lazy">
+                        </div>
+                        <div class="related-project-content">
+                            <h3>Task Management App</h3>
+                            <p>Aplicación de gestión de tareas con colaboración en tiempo real.</p>
+                            <a href="project2.html" class="btn btn-sm">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="related-project-card">
+                        <div class="related-project-image">
+                            <img src="../assets/images/project3-preview.jpg" alt="REST API Service" loading="lazy">
+                        </div>
+                        <div class="related-project-content">
+                            <h3>REST API Service</h3>
+                            <p>API robusta con autenticación JWT y documentación completa.</p>
+                            <a href="#" class="btn btn-sm">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mi Portfolio. Hecho con ♥ por Euclides Marin</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacidad</a>
+                    <a href="#" class="footer-link">Términos</a>
+                    <a href="../contact.html" class="footer-link">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
+</body>
+</html>
