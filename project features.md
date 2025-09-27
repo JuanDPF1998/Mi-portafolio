@@ -68,7 +68,7 @@ git commit -m "Initial commit"
 ```
 Sube tu proyecto a GitHub:
 ```bash
-git remote add origin https://github.com/tuusuario/portfolio-website.git
+git remote add origin https://github.com/marinm80/portfolio-static.git
 git push -u origin main
 ```
 
