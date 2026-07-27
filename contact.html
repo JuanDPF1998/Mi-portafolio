@@ -15,21 +15,11 @@
                 <a href="index.html" class="nav-logo">Mi Portfolio</a>
                 <div class="nav-menu" id="nav-menu">
                     <a href="index.html#home" class="nav-link">Inicio</a>
-                    <a href="index.html#about" class="nav-link" data-lang-key="nav_about">Sobre Mí</a>
-                    <a href="index.html#projects" class="nav-link" data-lang-key="nav_projects">Proyectos</a>
-                    <a href="cv.html" class="nav-link" data-lang-key="nav_cv">CV</a>
-                    <a href="contact.html" class="nav-link active" data-lang-key="nav_contact">Contacto</a>
-                    <div class="language-selector">
-                        <button class="lang-btn active" data-lang="es">
-                            <span class="flag">🇪🇸</span> ES
-                        </button>
-                        <button class="lang-btn" data-lang="en">
-                            <span class="flag">🇺🇸</span> EN
-                        </button>
-                    </div>
-                    <button class="theme-toggle" id="theme-toggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
+                    <a href="index.html#about" class="nav-link">Sobre Mí</a>
+                    <a href="index.html#projects" class="nav-link">Proyectos</a>
+                    <a href="cv.html" class="nav-link">CV</a>
+                    <a href="contact.html" class="nav-link active">Contacto</a>
+                   
                 </div>
                 <div class="nav-toggle" id="nav-toggle">
                     <span class="bar"></span>
@@ -41,11 +31,11 @@
     </header>
 
     <main>
-        <!-- Sección de Contacto -->
-        <section class="contact-hero">
+        <!-- Sección Hero de Contacto -->
+        <section class="gris">
             <div class="container">
-                <h1 class="page-title" data-lang-key="contact_title">Contáctame</h1>
-                <p class="page-subtitle" data-lang-key="contact_subtitle">
+                <h1 class="page-title">Contáctame</h1>
+                <p class="page-subtitle">
                     ¿Tienes un proyecto en mente? ¡Me encantaría escuchar sobre él!
                 </p>
             </div>
@@ -54,211 +44,171 @@
         <section class="contact-content">
             <div class="container">
                 <div class="contact-wrapper">
-                    <!-- Formulario de Contacto -->
-                    <div class="contact-form-section">
-                        <h2 data-lang-key="contact_form_title">Envíame un mensaje</h2>
-                        <form class="contact-form" id="contact-form" novalidate>
-                            <div class="form-group">
-                                <label for="name" data-lang-key="contact_form_name">Nombre completo *</label>
-                                <input 
-                                    type="text" 
-                                    id="name" 
-                                    name="name" 
-                                    required
-                                    autocomplete="name"
-                                >
-                                <span class="error-message"></span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    required
-                                    autocomplete="email"
-                                >
-                                <span class="error-message"></span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="subject">Asunto</label>
-                                <input 
-                                    type="text" 
-                                    id="subject" 
-                                    name="subject"
-                                    placeholder="Oportunidad de trabajo, consulta, etc."
-                                >
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Mensaje *</label>
-                                <textarea 
-                                    id="message" 
-                                    name="message" 
-                                    rows="6" 
-                                    required
-                                    placeholder="Cuéntame sobre tu proyecto o consulta..."
-                                ></textarea>
-                                <span class="error-message"></span>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-full">
-                                <span class="btn-text" data-lang-key="contact_form_submit">Enviar Mensaje</span>
-                                <span class="btn-loading">
-                                    <i class="fas fa-spinner fa-spin"></i>
-                                </span>
-                            </button>
-                        </form>
-
-                        <!-- Mensaje de éxito -->
-                        <div class="success-message" id="success-message">
-                            <i class="fas fa-check-circle"></i>
-                            <h3 data-lang-key="contact_success_title">¡Mensaje enviado con éxito!</h3>
-                            <p data-lang-key="contact_success_text">Gracias por contactarme. Te responderé lo antes posible.</p>
-                        </div>
-                    </div>
-
-                    <!-- Información de Contacto -->
-                    <div class="contact-info-section">
-                        <h2 data-lang-key="contact_info_title">Información de contacto</h2>
+                    <!-- Información de Contacto (sin formulario) -->
+                    <div class="contact-info-section" style="width: 100%;">
+                        <h2 style="text-align: center;">Información de contacto</h2>
                         
-                        <div class="contact-info">
-                            <div class="contact-item">
+                        <div class="contact-info" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+                            <div class="contact-item" style="flex: 1; min-width: 250px;">
                                 <div class="contact-icon">
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="contact-details">
                                     <h3>Email</h3>
-                                    <p>euclides.marin@ejemplo.com</p>
-                                    <a href="mailto:euclides.marin@ejemplo.com" class="contact-link">
+                                    <p>juandanielpf1998@gmail.com</p>
+                                    <a href="mailto:juandanielpf1998@gmail.com" class="contact-link">
                                         Enviar email
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="contact-item">
+                            <div class="contact-item" style="flex: 1; min-width: 250px;">
                                 <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
+                                    <i class="fab fa-github"></i>
                                 </div>
                                 <div class="contact-details">
-                                    <h3>Teléfono</h3>
-                                    <p>+34 123 456 789</p>
-                                    <a href="tel:+34123456789" class="contact-link">
-                                        Llamar ahora
+                                    <h3>GitHub</h3>
+                                    <p>github.com/JuanDPF1998</p>
+                                    <a href="https://github.com/JuanDPF1998" target="_blank" class="contact-link">
+                                        Ver perfil
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="contact-item">
+                            <div class="contact-item" style="flex: 1; min-width: 250px;">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>LinkedIn</h3>
+                                    <p>https://www.linkedin.com/in/juandanielpf/</p>
+                                    <a href="https://www.linkedin.com/in/juandanielpf/" target="_blank" class="contact-link">
+                                        Conectar
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item" style="flex: 1; min-width: 250px;">
                                 <div class="contact-icon">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="contact-details">
                                     <h3>Ubicación</h3>
-                                    <p>Madrid, España</p>
-                                    <p class="text-muted">Disponible para trabajo remoto</p>
+                                    <p>Ciudad de México, México</p>
+                                    <p class="text-muted">Disponible para trabajo remoto/híbrido</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Redes Sociales -->
-                        <div class="social-section">
-                            <h3>Sígueme en redes sociales</h3>
-                            <div class="social-links">
-                                <a href="#" class="social-link" title="GitHub">
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- Redes Sociales -->
+                        <div class="social-section" style="text-align: center; width: 100%; margin-top: 3rem;">
+                            <h3 style="text-align: center;">Sígueme en redes sociales</h3>
+                            <div class="social-links" style="display: flex; justify-content: center; gap: 1rem;">
+                                <a href="https://github.com/JuanDPF1998" class="social-link" title="GitHub" target="_blank">
                                     <i class="fab fa-github"></i>
                                     <span>GitHub</span>
                                 </a>
-                                <a href="#" class="social-link" title="LinkedIn">
+                                <a href="https://www.linkedin.com/in/juandanielpf/" class="social-link" title="LinkedIn" target="_blank">
                                     <i class="fab fa-linkedin"></i>
                                     <span>LinkedIn</span>
-                                </a>
-                                <a href="#" class="social-link" title="Twitter">
-                                    <i class="fab fa-twitter"></i>
-                                    <span>Twitter</span>
-                                </a>
-                                <a href="#" class="social-link" title="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                    <span>Instagram</span>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Disponibilidad -->
-                        <div class="availability-section">
-                            <div class="availability-card">
+                         <div class="container">
+
+                         </div>
+                        <div class="availability-section" style="text-align: center;">
+                            <div class="availability-card" style="text-align: center;">
                                 <div class="availability-status">
                                     <span class="status-dot available"></span>
-                                    <span class="status-text">Disponible para proyectos</span>
+                                    <span class="status-text">Disponible para nuevas oportunidades</span>
                                 </div>
                                 <p>
-                                    Actualmente acepto nuevos proyectos y colaboraciones. 
-                                    Tiempo de respuesta típico: 24-48 horas.
+                                    Actualmente me encuentro en busqueda de nuevas oportunidades laborales. 
+                                    Tiempo de respuesta: inmediato, lo ma spronto posible.
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <br>
 
+        <!-- Sección FAQ (opcional, puedes eliminarla si quieres simplificar) -->
         <!-- Sección FAQ -->
-        <section class="faq-section">
-            <div class="container">
-                <h2 class="section-title">Preguntas Frecuentes</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h3>¿Cuál es tu proceso de trabajo?</h3>
-                        <p>
-                            Trabajo de forma colaborativa, comenzando con una reunión para entender 
-                            tus necesidades, seguido de propuesta, desarrollo iterativo y entrega final.
-                        </p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>¿Qué incluye tu servicio?</h3>
-                        <p>
-                            Desarrollo completo, diseño responsivo, optimización SEO, testing, 
-                            documentación y soporte post-lanzamiento por 30 días.
-                        </p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>¿Trabajas con plazos ajustados?</h3>
-                        <p>
-                            Sí, puedo adaptarme a plazos específicos. El tiempo depende de la 
-                            complejidad del proyecto, pero siempre mantengo la calidad.
-                        </p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>¿Ofreces mantenimiento?</h3>
-                        <p>
-                            Ofrezco planes de mantenimiento mensuales que incluyen actualizaciones, 
-                            backups, monitoreo y soporte técnico continuo.
-                        </p>
-                    </div>
-                </div>
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">Preguntas Frecuentes (para reclutadores)</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3>¿Qué tipo de puesto estás buscando?</h3>
+                <p>
+                    Busco una oportunidad como <strong>desarrollador junior</strong> en backend (Java/Spring Boot), 
+                    frontend (Angular) o full-stack. Estoy abierto a aprender nuevas tecnologías si el equipo lo requiere.
+                </p>
             </div>
-        </section>
+            <div class="faq-item">
+                <h3>¿Tienes experiencia trabajando en equipo?</h3>
+                <p>
+                    Sí. He trabajado con metodologías ágiles (Scrum), herramientas como Jira para la gestión de tareas, 
+                    y Git/GitHub para el control de versiones colaborativo.
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Qué tecnologías dominas actualmente?</h3>
+                <p>
+                    <strong>Backend:</strong> Java, Spring Boot, Hibernate, JPA, JWT, H2, SQL Server.<br>
+                    <strong>Frontend:</strong> Angular, TypeScript, Thymeleaft, Bootstrap HTML, CSS.<br>
+                    <strong>Herramientas:</strong> Git, GitHub, Maven, Jira, Postman.
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Estás dispuesto a aprender nuevas tecnologías?</h3>
+                <p>
+                    Mi objetivo es crecer dentro de una empresa. Si el proyecto requiere tecnologías que aún no domino, 
+                    me comprometo a aprenderlas lo antes posible.
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Buscas trabajo remoto, híbrido o presencial?</h3>
+                <p>
+                    Estoy abierto a los tres modelos. Actualmente estoy en <strong>Hidalgo</strong> y tengo disponibilidad para movilidad si es necesario.
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Tienes proyecto profesional para mostrar?</h3>
+                <p>
+                    Sí. Mi proyecto principal es una <strong>API completa de gestión de tareas</strong> con Spring Boot y Angular, 
+                    que incluye autenticación JWT, paginación y buenas prácticas. Puedes verlo en mi sección de proyectos y en GitHub.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p data-lang-key="footer_text">&copy; 2025 Mi Portfolio. Hecho con ♥ por Euclides Marin</p>
+           <!-- <div class="footer-content">
+                <p></p>
                 <div class="footer-links">
                     <a href="#" class="footer-link">Privacidad</a>
                     <a href="#" class="footer-link">Términos</a>
                     <a href="contact.html" class="footer-link">Contacto</a>
                 </div>
             </div>
+            -->
         </div>
     </footer>
 
-        <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/script.js"></script>
-</body>
-</html>
 </body>
 </html>
