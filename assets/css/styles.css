@@ -2108,3 +2108,193 @@ section {
 .experience-description li {
     margin-bottom: 0.5rem;
 }
+
+/* --- Estilos específicos para la impresión (PDF) --- */
+@media print {
+    /* 1. Eliminar colores de fondo y degradados para ahorrar tinta */
+    .cv-header {
+        background: #2563eb !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .cv-photo {
+        border: 2px solid #2563eb !important;
+    }
+
+    .experience-date {
+        background-color: #2563eb !important;
+        color: white !important;
+    }
+
+    /* 2. Asegurar que el grid se mantenga en la impresión */
+    .cv-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 2fr !important;
+        gap: 2rem !important;
+    }
+
+    /* 3. Asegurar que la sidebar no se rompa */
+    .cv-sidebar {
+        display: block !important;
+    }
+
+    /* 4. Reducir márgenes y padding para ajustar más contenido */
+    .cv-main {
+        padding: 1rem !important;
+        max-width: 100% !important;
+    }
+
+    .cv-section {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .experience-item, .skill-group {
+        padding: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+        border: 1px solid #ddd !important;
+        background-color: white !important;
+        page-break-inside: avoid; /* Evita que un elemento se corte entre páginas */
+    }
+
+    /* 5. Reducir tamaño de fuente general */
+    .cv-main {
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+    }
+
+    .cv-section-title {
+        font-size: 16px !important;
+    }
+
+    .experience-title {
+        font-size: 14px !important;
+    }
+
+    .experience-company {
+        font-size: 12px !important;
+    }
+
+    .experience-description {
+        font-size: 11px !important;
+    }
+
+    .tech-pill {
+        font-size: 9px !important;
+        padding: 0.1rem 0.5rem !important;
+    }
+
+    .cv-contact-item {
+        font-size: 10px !important;
+    }
+
+    /* 6. Ocultar elementos que no necesitas en el PDF */
+    .download-cv {
+        display: none !important;
+    }
+}
+
+/* ===== AJUSTES PARA LA BARRA LATERAL (VISTA NORMAL) ===== */
+
+/* Agregar espacio alrededor de la barra lateral */
+.cv-sidebar {
+    padding-left: 1rem;   /* Espacio a la izquierda */
+    padding-right: 0.5rem; /* Espacio a la derecha (opcional) */
+}
+
+/* Centrar los títulos de las secciones en la barra lateral */
+.cv-sidebar .cv-section-title {
+    text-align: center;
+}
+
+/* Agregar un margen interno a las tarjetas de habilidades */
+.cv-sidebar .skill-group {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== ESTILO PROFESIONAL PARA LISTA DE HABILIDADES ===== */
+.cv-sidebar .skill-item {
+    display: block;           /* Ocupa todo el ancho */
+    padding: 0.15rem 0;       /* Espacio mínimo vertical */
+    border: none !important;  /* Sin bordes */
+    background: transparent !important; /* Sin fondo */
+    box-shadow: none !important; /* Sin sombras */
+    transition: none !important; /* Sin animaciones */
+    font-weight: 400;         /* Peso normal (no negrita) */
+    color: var(--text-primary); /* Color de texto estándar */
+}
+
+.cv-sidebar .skill-item:hover {
+    background: transparent !important; /* Sin cambio al pasar el mouse */
+    transform: none !important;
+    color: var(--text-primary); /* Mantiene el color */
+}
+
+/* Alinear la lista al centro (opcional) */
+.cv-sidebar .skill-list {
+    display: flex;
+    flex-direction: column;   /* Una columna */
+    align-items: center;      /* Centrar horizontalmente */
+    gap: 0.15rem;            /* Espacio mínimo entre elementos */
+}
+
+/* Opcional: si quieres que los títulos de habilidades queden centrados */
+.cv-sidebar .cv-section-title {
+    text-align: center;
+}
+
+
+/* ===== UNIFICAR ESTILO: QUE TODOS LOS BLOQUES SE VEAN COMO IDIOMAS ===== */
+
+/* 1. Quitar bordes y fondos a todos los bloques de habilidades */
+.cv-sidebar .skill-group {
+    border: none !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    padding: 0.5rem 0 !important;
+    margin-bottom: 1rem !important;
+}
+
+/* 2. Alinear los elementos de las listas de habilidades */
+.cv-sidebar .skill-list {
+    display: flex;
+    flex-direction: column;   /* Una columna */
+    align-items: center;      /* Centrar horizontalmente */
+    gap: 0.3rem;            /* Espacio entre elementos */
+}
+
+/* 3. Estilo de los elementos de habilidad (como los de idiomas) */
+.cv-sidebar .skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0;
+    border: none !important;
+    background: transparent !important;
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.9rem;
+}
+
+/* 4. Títulos de las secciones centrados y sin borde */
+.cv-sidebar .cv-section-title {
+    text-align: center !important;
+    border-bottom: 1px solid #ddd !important;  /* Línea sutil debajo */
+    padding-bottom: 0.3rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* ===== LÍNEA SEPARADORA ENTRE SECCIONES ===== */
+.cv-sidebar .cv-section-title {
+    border-bottom: 2px solid var(--primary-color); /* Línea debajo del título */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* O si quieres que la línea sea más sutil */
+.cv-sidebar .cv-section-title {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
